@@ -51,6 +51,7 @@ class ViewController: UIViewController {
     func updateUI(){
         //var letters = [String]()
         //let letters=currentGame.formattedWord.map{$0.lowercased()}
+        // это для проверки гитхаба
         correctWordLabel.text = currentGame.formattedWord.map{$0.lowercased()}.joined(separator: " ")
         scoreLabel.text = "Wins: \(totalWins), Losses: \(totalLoses)"
         treeImageView.image = UIImage(named: "Tree \(currentGame.incorrectMovesRemaining)")
